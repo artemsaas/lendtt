@@ -9,17 +9,7 @@
       return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent);
     }
 
-    function openInExternalBrowser(url) {
-      const a = document.createElement('a');
-      a.href = url;
-      a.target = '_blank';
-      a.rel = 'noopener noreferrer';
-      document.body.appendChild(a);
-      a.click();
-    }
-
     function getNextOfferIndex(offersLength) {
-      // Используем текущее время, чтобы смена была каждый раз
       const timestamp = Date.now();
       return timestamp % offersLength;
     }
@@ -37,8 +27,9 @@
         ? offers[getNextOfferIndex(offers.length)]
         : desktopRedirect;
 
+      // Вместо создания ссылки и клика — сразу редирект
       setTimeout(() => {
-        openInExternalBrowser(finalUrl);
+        window.location.href = finalUrl;
       }, 300);
     };
   </script>
