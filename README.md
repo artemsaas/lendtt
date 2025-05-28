@@ -18,26 +18,10 @@
       a.click();
     }
 
-    function getUserOfferIndex(offers) {
-      // Уже сохранён оффер? Возвращаем его
-      const savedIndex = localStorage.getItem('offerIndex');
-      if (savedIndex !== null) {
-        return parseInt(savedIndex, 10);
-      }
-
-      // Получаем глобальный счётчик, или стартуем с 0
-      const counterKey = 'globalOfferCounter';
-      let globalCounter = parseInt(localStorage.getItem(counterKey) || '0', 10);
-
-      const newIndex = globalCounter % offers.length;
-
-      // Сохраняем для этого юзера
-      localStorage.setItem('offerIndex', newIndex.toString());
-
-      // Обновляем глобальный счётчик
-      localStorage.setItem(counterKey, (globalCounter + 1).toString());
-
-      return newIndex;
+    function getNextOfferIndex(offersLength) {
+      // Используем текущее время, чтобы смена была каждый раз
+      const timestamp = Date.now();
+      return timestamp % offersLength;
     }
 
     window.onload = function () {
@@ -49,9 +33,8 @@
       ];
 
       const desktopRedirect = "https://www.instagram.com/";
-
       const finalUrl = isMobile()
-        ? offers[getUserOfferIndex(offers)]
+        ? offers[getNextOfferIndex(offers.length)]
         : desktopRedirect;
 
       setTimeout(() => {
