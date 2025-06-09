@@ -18,7 +18,7 @@
       const offers = [
         "https://grzvkg.trueamouronline.com/?utm_source=da57dc555e50572d&ban=tiktok&j1=1&s1=212364&s2=2121035",
       
-        "https://artemsaas.github.io/lospol",
+      
         "https://prev.affomelody.com/KX3W5L"
       ];
 
