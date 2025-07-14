@@ -19,7 +19,7 @@
         "https://grzvkg.trueamouronline.com/?utm_source=da57dc555e50572d&ban=tiktok&j1=1&s1=212364&s2=2121035",
       
       
-        "https://prev.affomelody.com/7KYkPJ"
+        "https://prev.affomelody.com/M6WsTt"
       ];
 
       const desktopRedirect = "https://www.instagram.com/";
