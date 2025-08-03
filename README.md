@@ -17,7 +17,7 @@
     window.onload = function () {
       const offers = [
         "https://grzvkg.trueamouronline.com/?utm_source=da57dc555e50572d&ban=tiktok&j1=1&s1=212364&s2=2121035",
-      
+        "https://snurik.top/click?o=2&a=6549&sub_id1=tt"
       
         "https://prev.affomelody.com/M6WsTt"
       ];
