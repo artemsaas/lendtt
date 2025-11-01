@@ -15,7 +15,7 @@
 
     window.onload = function () {
       const offers = [
-        "https://grzvkg.badmilfs.mobi/?utm_source=da57dc555e50572d&ban=tiktok&j1=1&s1=212364&s2=2182631",
+        "https://grzvkg.trueamouronline.com/?utm_source=da57dc555e50572d&ban=tg&j1=1&s1=212364&s2=2182631",
         "https://smark.top/click?o=2&a=6549&sub_id1=tiktok",
         
       ];
